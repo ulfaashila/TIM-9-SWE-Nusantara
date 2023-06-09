@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Top Navigation Bar */
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #A8DDFC;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 3px;
+    position: absolute;
+    width: 250px;
+    height: 43px;
+    left: 80px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #003E65;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    font-family: 'poppins', sans-serif;
+    transition: all .50s ease;
+    transition: box;
+}
+
+.navbar a:hover {
+    color: #FA8305;
+}
+
+.navbar a.active {
+    color: #FA8305;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #003E65;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+/* Navigation bar Responsive */
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29 vh;
+        background: #A8DDFC;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: #003E65;
+        transform: translateY(5px);
+    }
+
+    .navbar a.active {
+        color: #003E65;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+}
+
+.Hero {
+    font-size: 48px;
+    font-family: 'Arvo', serif;
+    padding: 250px;
+    text-align: center;
+    color: #003E65;
+    background-image: url('assets/HeroNews.png');
+    height: 523px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    background-color: #93CDF1;
+    color: #003E65;
+  }
