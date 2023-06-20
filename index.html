@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NusaWeather</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/weather.css">
+    <link rel="stylesheet" href="./CSS/news.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Top Navigation bar -->
+    <nav class="nav">
+        <a href="index.html" class="logo">
+            <img src="assets/LogoNusa.png" alt="LogoNusa">
+        </a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Weather.html">Weather</a></li>
+            <li><a href="WeatherNews.html">News</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header>
+        <div class="hero">
+            <h1>Ready to Face The Day</h1>
+            <p>  Start your day by checking the latest weather forecast for a smooth and prepared journey ahead.</p>
+            <button class="button-hero">
+                <a href="Weather.html" class="btn-hero">Check The Weather</a>
+            </button>
+        </div>
+    </header>
+
+    <!-- overview about weather web -->
+    <section>
+        <div class="overview">
+            <img src="assets/logo 3.png" alt="logo overview">
+            <p>
+                “NusaWeather provides accurate and timely weather information,
+                empowering users to plan their day and be prepared for whatever nature
+                throws their way.” <br>
+            </p>
+            <button class="button-overview">
+                <a href="AboutUs.html" class="btn-overview"> See More</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- overview weather news -->
+    <section>
+        <div class="Heading-news">
+            <h1>Let's Remain Up to Date on The Newest Weather News</h1>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="articles">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="assets/news 1.png" alt="news1" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Unhealthy air quality grips New York City as wildfire smoke shrouds skyline</h2>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="assets/news 2.png" alt="news2" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Parts of Florida under flood alert as Arlene brings heavy wind and rain</h2>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="assets/news 3.png" alt="news3" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Impact on the Weather in Indonesia, When Does El Nino Peak Happen?</h2>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <button class="button-news">
+            <a href="WeatherNews.html" class="btn-news"> See More</a>
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Copyright ® 2023 Team 9 - Nusantara All rights Recerved
+        </p>
+    </footer>
+
+    <!-- all JS Script -->
+    <script type="module" src="./JS/main.js"></script>
+</body>
+
+</html>

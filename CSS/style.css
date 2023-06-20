@@ -1,0 +1,533 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Top Navigation Bar */
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.nav-scrolled {
+    background-color: #A8DDFC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 3px;
+    position: absolute;
+    width: 250px;
+    height: 43px;
+    left: 80px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #003E65;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    font-family: 'poppins', sans-serif;
+    transition: all .50s ease;
+    transition: box;
+}
+
+.navbar a:hover {
+    color: #FA8305;
+}
+
+.navbar a.active {
+    color: #FA8305;
+}
+
+.navbar a.nav-white{
+    color: #ffff;
+}
+
+.navbar a.nav-white:hover{
+    color: #FA8305;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #003E65;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+/*******************
+hero landing page 
+*******************/
+.hero {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('../assets/hero.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero>h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vw;
+    font-family: 'Arvo', serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 1.2vw;
+    display: flex;
+    color: #003E65;
+    justify-content: center;
+    white-space: nowrap;
+    transition-delay: 200ms;
+    transition: all .50s ease;
+}
+
+.hero>p {
+    position: absolute;
+    top: 16vw;
+    left: 50%;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 560px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2vw;
+    transition: all .50s ease;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.button-hero {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 42%;
+    top: 23vw;
+    background: linear-gradient(92.48deg, #003E65 2.08%, #045487 117.25%);
+    align-items: center;
+    border-radius: 40px;
+    width: 16.5vw;
+    height: 3.5vw;
+    border: solid transparent;
+    animation: bounce 2s ease infinite;
+
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.btn-hero {
+    color: white;
+    font-size: 18px;
+    padding: auto;
+    font-family: 'poppins', sans-serif;
+    border: solid transparent;
+    transition: .2s ease;
+}
+
+/* button hover */
+.button-hero:hover {
+    background: #045487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+/*************
+overview about NusaWeather
+**************/
+.overview {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #e2e7ef;
+    width: 100vw;
+    height: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.overview>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105px;
+    height: 65px;
+}
+
+.overview>p {
+    position: relative;
+    width: 800px;
+    margin: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 33px;
+    align-self: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.73);
+}
+
+.button-overview {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    background: linear-gradient(92.48deg, #003E65 2.08%, #045487 117.25%);
+    align-items: center;
+    border-radius: 40px;
+    width: 150px;
+    height: 45px;
+    border: solid transparent;
+}
+
+.btn-overview {
+    color: white;
+    font-size: 16px;
+    padding: auto;
+    font-family: 'poppins', sans-serif;
+    border: solid transparent;
+    transition: .2s ease;
+}
+
+/* button hover */
+.button-overview:hover {
+    background: #045487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+/**************
+Overview News 
+**************/
+.Heading-news {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #003E65;
+}
+
+.line {
+    width: 223px;
+    height: 5px;
+    margin: 10px auto;
+    background: #FA8305;
+    border-radius: 20px;
+}
+
+.articles {
+    display: flex;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+}
+
+article {
+    --img-scale: 1.001;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #E2E7EF;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+article h2 {
+    margin: 0 0 18px 0;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.73);
+    transition: color 0.3s ease-out;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+article img {
+    max-width: 100%;
+    width: 100vw;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+    justify-items: center;
+}
+
+.article-body {
+    padding: 24px;
+}
+
+/* hover article */
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*Generic layout (demo looks)*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.articles {
+    position: relative;
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 60px;
+}
+
+.button-news {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    background: linear-gradient(92.48deg, #003E65 2.08%, #045487 117.25%);
+    align-items: center;
+    border-radius: 40px;
+    width: 150px;
+    height: 45px;
+    border: solid transparent;
+}
+
+.btn-news {
+    color: white;
+    font-size: 16px;
+    padding: auto;
+    font-family: 'poppins', sans-serif;
+    border: solid transparent;
+    transition: .2s ease;
+}
+
+/* button hover */
+.button-news:hover {
+    background: #045487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+/*******
+Footer 
+*******/
+footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    background-color: #93CDF1;
+    color: #003E65;
+}
+
+/* Navigation bar Responsive */
+@media (max-width: 1280px) {
+    header {
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29 vh;
+        background: #A8DDFC;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: #003E65;
+        transform: translateY(5px);
+    }
+
+    .navbar a.active {
+        color: #003E65;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+
+    .logo img {
+        width: 180px;
+        height: 30px;
+    }
+}
+
+/* Landing Page Responsive */
+@media screen and (max-width: 1280px) {
+    .hero {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .hero {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero>h1 {
+        font-size: 35px;
+        top: 24vw;
+    }
+
+    .hero>p {
+        top: 32vw;
+        padding: 20px;
+        font-size: 13px;
+        width: 298px;
+        line-height: 20px;
+    }
+
+    .button-hero {
+        top: 55vw;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .btn-hero {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .overview {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .overview>p {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .Heading-news {
+        font-size: 15px;
+    }
+}
+
+/* card WeatherNews responsive */
+@media screen and (max-width: 960px) {
+    article {
+        container: card/inline-size;
+    }
+
+}
+
+@container card (min-width: 380px) {
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
+    }
+
+    .article-body {
+        padding-left: 0;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    figure img {
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}

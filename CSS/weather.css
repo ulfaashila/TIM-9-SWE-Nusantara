@@ -1,0 +1,317 @@
+.weather-page {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('../assets/weatherIcon/background-weather.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 91px;
+    padding-bottom: 30px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #E2E7EF;
+    color: rgba(0, 0, 0, 73);
+    width: 400px;
+    height: 53px;
+    margin: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    padding-left: 40px;
+    font-family: 'poppins', sans-serif;
+}
+
+.search input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #9E9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #003E65;
+    color: #e2e7ef;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    left: 942px;
+    margin-left: 25px;
+    top: 186px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #045487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.weather-icon {
+    height: 140px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+/* Weather Page Card - start */
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 40px;
+    background: rgba(147, 205, 241, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.current-weather-icon {
+    display: flex;
+    flex-direction: column;
+    width: 216px;
+    height: auto;
+    margin: auto;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.current-weather-icon img {
+    display: flex;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.current-weather-icon p {
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.time p {
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    color: #003E65;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 10px;
+}
+
+.temperature h3 {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    margin: 10px;
+    padding-bottom: 0;
+    text-align: center;
+    color: #003E65;
+}
+
+.temperature p {
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.73);
+    padding-top: 20px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.location p {
+    text-align: center;
+    font-size: 18px;
+    color: #003E65;
+    padding-left: 5px;
+}
+
+.humidity {
+    width: 230px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: rgba(65, 116, 148, 0.53);
+    border-radius: 20px;
+}
+
+.humidity h5 {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.humidity img {
+    float: left;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.humidity p {
+    float: right;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.pressure {
+    width: 230px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(65, 116, 148, 0.53);
+    border-radius: 20px;
+}
+
+.pressure h5 {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.pressure img {
+    float: left;
+    margin-top: 20px;
+}
+
+.pressure p {
+    float: right;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.wind {
+    width: 230px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: rgba(65, 116, 148, 0.53);
+    border-radius: 20px;
+}
+
+.wind h5 {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+.wind img {
+    margin-top: 20px;
+}
+
+.wind p {
+    float: right;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.visibility {
+    width: 230px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(65, 116, 148, 0.53);
+    border-radius: 20px;
+}
+
+.visibility h5 {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.visibility img {
+    margin-top: 20px;
+}
+
+.visibility p {
+    float: right;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
