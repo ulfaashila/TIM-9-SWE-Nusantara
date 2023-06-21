@@ -1,4 +1,3 @@
-/* about us - hero */
 .header-parent {
     background-image: url(../assets/HeroNews.png);
     background-position: bottom;
@@ -7,9 +6,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.header-logo {
+  }
+  
+  .header-logo {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -17,16 +16,15 @@
     position: relative;
     top: 6rem;
     align-items: center;
-}
-
-.logo2 {
+  }
+  
+  .logo2 {
     width: 440px;
     height: 300px;
     margin: 20px;
-}
-
-/* about us - nusaWeather */
-.about {
+  }
+  
+  .about {
     margin-top: -3rem;
     position: relative;
     background-color: white;
@@ -35,54 +33,56 @@
     margin-top: 10rem;
     white-space: pre-line;
     text-align: center;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     font-size: 16px;
     line-height: 30px;
     color: rgba(0, 0, 0, 0.73);
     font-weight: 600;
     width: 100%;
-}
-
-.line {
+  }
+  
+  .line {
     width: 250px;
     height: 5px;
     align-items: center;
-    background: #FA8305;
+    background: #fa8305;
     border-radius: 20px;
     margin-bottom: 30px;
-}
-
-.advantage-parent {
+  }
+  
+  .advantage-parent {
     background-color: #e2e7ef;
     text-align: center;
     padding-top: 50px;
     font-size: 25px;
-}
-
-.Heading-adv {
-    font-family: 'Arvo', sans-serif;
+  }
+  
+  .Heading-adv {
+    font-family: "Arvo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
     text-align: center;
-    color: #003E65;
-}
-
-/* the advantages of our website */
-.advantage {
+    color: #003e65;
+  }
+  
+  .advantage {
     padding-top: 6rem;
     height: 50vh;
     display: flex;
     justify-content: space-evenly;
-}
-
-.simbol {
+  }
+  
+  .simbol {
     width: 50vh;
-}
-
-/* developer team profile */
-.team {
+  }
+  
+  .p-5 {
+    padding: 20px;
+  }
+  
+  .team {
     width: 100%;
     height: 1690px;
     background: #fff;
@@ -90,9 +90,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.team-content {
+  }
+  
+  .team-content {
     width: 100%;
     max-width: 1350px;
     margin: 0 auto;
@@ -102,103 +102,112 @@
     gap: 2rem;
     text-align: center;
     margin-top: 4rem;
-    font-family: 'poppins', sans-serif;
-}
-
-.team-content img {
+    font-family: "poppins", sans-serif;
+  }
+  
+  .team-content img {
     width: 100%;
     height: auto;
     border-radius: 20px;
     margin-bottom: 15px;
-}
-
-.center h1 {
+  }
+  
+  .center h1 {
     padding: 20px;
     margin-top: 20px;
-    color: #003E65;
+    color: #003e65;
     font-size: 40px;
     text-align: center;
-    font-family: 'arvo', sans-serif;
-}
-
-.box {
+    font-family: "arvo", sans-serif;
+  }
+  
+  .box {
     padding: 10px;
-    background: #E2E7EF;
+    background: #e2e7ef;
     border-radius: 20px;
-    transition: all .38s ease;
-}
-
-.box h3 {
+    transition: all 0.38s ease;
+  }
+  
+  .box h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #003E65;
+    color: #003e65;
     margin-bottom: 8px;
-}
-
-.box h5 {
+  }
+  
+  .box h5 {
     font-size: 12px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.73);
     margin-bottom: 15px;
     letter-spacing: 1px;
     line-height: 24px;
-}
-
-.icons i {
+  }
+  
+  .icons i {
     display: inline-block;
-    color: #003E65;
+    color: #003e65;
     font-size: 20px;
     margin: 0 8px;
-    transition: all .38s ease;
-}
-
-.icons i:hover {
+    transition: all 0.38s ease;
+  }
+  
+  .icons i:hover {
     transform: scale(1.2);
-}
-
-.box:hover {
+  }
+  
+  .box:hover {
     transform: translateY(-10px);
     cursor: pointer;
-}
-
-/* media responsive */
-@media(max-width: 1240px) {
-
+  }
+  
+  @media (max-width: 1240px) {
     .team {
-        width: 100%;
-        height: auto;
-        padding: 90px 2%;
+      width: 100%;
+      height: auto;
+      padding: 90px 2%;
     }
-
+  
     .center h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-}
-
-@media (max-width: 840px) {
+  }
+  
+  @media (max-width: 840px) {
     .about {
-        font-size: 12px;
-        
+      font-size: 12px;
     }
-
+  
+    .mini {
+      width: 300px;
+      height: 200px;
+    }
+  
     .logo {
-        width: 300px;
-        height: auto;
+      width: 350px;
+      height: auto;
     }
-
+  
     .advantage {
-        flex-wrap: wrap;
-        padding: 20px;
-        height: auto;
-        margin: auto;
+      flex-wrap: wrap;
+      padding: 20px;
+      height: auto;
+      margin: auto;
     }
-
+  
+    .simbol1 {
+      width: fit-content;
+      
+      height: auto;
+    }
+  
     .Heading-adv {
-        font-size: 34px;
-        padding: 20px;
+      font-size: 34px;
+      padding: 20px;
     }
-
-    .box h3{
-        font-size: 14px;
+  
+    .box h3 {
+      font-size: 14px;
     }
-}
+  }
+  

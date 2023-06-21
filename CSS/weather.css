@@ -1,16 +1,19 @@
-/* weather page */
 .weather-page {
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    background-image: url('../assets/weatherIcon/background-weather.png');
+    background-image: url("../assets/weatherIcon/background-weather.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     align-self: center;
     align-items: flex-end;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.count {
+    padding-bottom: 800px;
 }
 
 .search {
@@ -25,7 +28,7 @@
 .search input {
     border: 0;
     outline: 0;
-    background: #E2E7EF;
+    background: #e2e7ef;
     color: rgba(0, 0, 0, 73);
     width: 400px;
     height: 53px;
@@ -33,7 +36,7 @@
     font-size: 16px;
     border-radius: 50px;
     padding-left: 40px;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 .search input::placeholder {
@@ -41,14 +44,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: #9E9E9E;
-    font-family: 'Poppins', sans-serif;
+    color: #9e9e9e;
+    font-family: "Poppins", sans-serif;
 }
 
 .search button {
     border: 0;
     outline: 0;
-    background: #003E65;
+    background: #003e65;
     color: #e2e7ef;
     border-radius: 50%;
     width: 53px;
@@ -61,10 +64,9 @@
 
 .search button:hover {
     background: #045487;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* weather icon */
 .weather-icon {
     height: 140px;
     width: auto;
@@ -76,23 +78,7 @@
     margin: 5px;
 }
 
-/* Styling for error page */
-.error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.error p {
-    display: none;
-    text-align: center;
-    color: #003E65;
-    font-weight: 500;
-    font-family: 'poppins', sans-serif;
-    font-size: 18px;
-    margin: 50px;
-}
-
-/* Weather Page Card*/
+/* Weather Page Card - start */
 .weather-card {
     display: flex;
     align-items: center;
@@ -106,6 +92,22 @@
     backdrop-filter: blur(2px);
     border-radius: 20px;
 }
+
+/* Styling for error page
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error p {
+    display: none;
+    text-align: center;
+    color: #003E65;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    margin: 50px;
+  } */
 
 .current-weather-icon {
     display: flex;
@@ -122,15 +124,14 @@
     width: 150px;
     height: auto;
     text-align: center;
-    margin-left: 10px;
 }
 
 .current-weather-icon p {
     display: flex;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.73);
     padding: 10px;
@@ -146,7 +147,8 @@
     text-align: left;
     padding: 10px;
     font-size: 18px;
-    color: #003E65;
+    font-weight: 600;
+    color: #003e65;
 }
 
 .temperature {
@@ -158,22 +160,21 @@
 
 .temperature h3 {
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
-    margin: 10px;
     padding-bottom: 0;
     text-align: center;
-    color: #003E65;
+    color: #003e65;
 }
 
 .temperature p {
     display: flex;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.73);
     padding-top: 20px;
@@ -189,12 +190,12 @@
 
 .location p {
     text-align: center;
-    font-size: 18px;
-    color: #003E65;
+    font-size: 16px;
+    color: #003e65;
     padding-left: 5px;
+    font-weight: 600;
 }
 
-/* Weather Page Card-detail information*/
 .humidity {
     width: 230px;
     height: 150px;
@@ -208,11 +209,11 @@
 .humidity h5 {
     padding: 10px;
     text-align: left;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .humidity img {
@@ -224,11 +225,11 @@
 .humidity p {
     float: right;
     margin-top: 50px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .pressure {
@@ -244,11 +245,11 @@
 .pressure h5 {
     padding: 10px;
     text-align: left;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .pressure img {
@@ -259,11 +260,11 @@
 .pressure p {
     float: right;
     margin-top: 50px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .wind {
@@ -279,11 +280,11 @@
 .wind h5 {
     padding: 10px;
     text-align: left;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .wind img {
@@ -293,11 +294,11 @@
 .wind p {
     float: right;
     margin-top: 50px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .visibility {
@@ -313,11 +314,11 @@
 .visibility h5 {
     padding: 10px;
     text-align: left;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .visibility img {
@@ -327,9 +328,113 @@
 .visibility p {
     float: right;
     margin-top: 50px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .weather-page {
+        padding-bottom: 0;
+    }
+
+    .mini-img {
+        width: 300px;
+        height: 100px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    .search input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .weather-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .current-weather-icon {
+        margin-bottom: 20px;
+    }
+
+    .current-weather-icon img {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .current-weather-icon p {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .count {
+        padding-bottom: 1600px;
+    }
+
+    .time {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .time p {
+        font-size: 14px;
+    }
+
+    .temperature h3 {
+        font-size: 48px;
+    }
+
+    .temperature p {
+        font-size: 14px;
+    }
+
+    .location {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .humidity,
+    .pressure,
+    .wind,
+    .visibility {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .humidity h5,
+    .pressure h5,
+    .wind h5,
+    .visibility h5 {
+        font-size: 12px;
+    }
+
+    .humidity img,
+    .pressure img,
+    .wind img,
+    .visibility img {
+        margin: 5px;
+    }
+
+    .humidity p,
+    .pressure p,
+    .wind p,
+    .visibility p {
+        font-size: 18px;
+    }
+
+    footer {
+        display: relative;
+    }
 }
