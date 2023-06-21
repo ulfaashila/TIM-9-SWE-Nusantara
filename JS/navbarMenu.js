@@ -1,4 +1,4 @@
-
+// menu side bar navigation
 export function navMenu() {
     let menu = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');

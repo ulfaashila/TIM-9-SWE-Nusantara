@@ -42,7 +42,10 @@ export function checkWeather() {
         var data = await response.json();
 
         // Change tags in weather card
+
         if (data.name != undefined) {
+            document.querySelector('.weather-card').style.display = "flex";
+            document.querySelector('.error p').style.display = "none";
             document.querySelector('.location p').innerHTML = data.name;
             document.querySelector('.temperature h3').innerHTML = Math.round(data.main.temp) + "°C";
             document.querySelector('.temperature p').innerHTML = "Feels like " + Math.round(data.main.feels_like) + "°C";
@@ -54,25 +57,29 @@ export function checkWeather() {
 
 
             // Change weather card's icon
-            if(data.weather[0].main == "Clouds") {
+            if (data.weather[0].main == "Clouds") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/04d@2x.png";
             }
-            else if(data.weather[0].main == "Clear") {
+            else if (data.weather[0].main == "Clear") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/01d@2x.png";
             }
-            else if(data.weather[0].main == "Rain") {
+            else if (data.weather[0].main == "Rain") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/10d@2x.png";
             }
-            else if(data.weather[0].main == "Thunderstorm") {
+            else if (data.weather[0].main == "Thunderstorm") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/11d@2x.png";
             }
-            else if(data.weather[0].main == "Drizzle") {
+            else if (data.weather[0].main == "Drizzle") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/09d@2x.png";
             }
-            else if(data.weather[0].main == "Snow") {
+            else if (data.weather[0].main == "Snow") {
                 weatherIcon.src = "https://openweathermap.org/img/wn/13d@2x.png";
             }
         } else {
+            // script for error - start
+            document.querySelector('.error p').style.display = "inline-block";
+            document.querySelector('.weather-card').style.display = "none";
+            // script for error - end
             document.querySelector('.location p').innerHTML = data.name;
             document.querySelector('.temperature h3').innerHTML = null + "°C";
             document.querySelector('.temperature p').innerHTML = "Feels like " + null + "°C";

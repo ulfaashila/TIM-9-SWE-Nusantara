@@ -1,3 +1,4 @@
+/* about us - hero */
 .header-parent {
     background-image: url(../assets/HeroNews.png);
     background-position: bottom;
@@ -24,6 +25,7 @@
     margin: 20px;
 }
 
+/* about us - nusaWeather */
 .about {
     margin-top: -3rem;
     position: relative;
@@ -67,6 +69,7 @@
     color: #003E65;
 }
 
+/* the advantages of our website */
 .advantage {
     padding-top: 6rem;
     height: 50vh;
@@ -78,6 +81,7 @@
     width: 50vh;
 }
 
+/* developer team profile */
 .team {
     width: 100%;
     height: 1690px;
@@ -157,6 +161,7 @@
     cursor: pointer;
 }
 
+/* media responsive */
 @media(max-width: 1240px) {
 
     .team {
@@ -173,10 +178,11 @@
 @media (max-width: 840px) {
     .about {
         font-size: 12px;
+        
     }
 
     .logo {
-        width: 350px;
+        width: 300px;
         height: auto;
     }
 
