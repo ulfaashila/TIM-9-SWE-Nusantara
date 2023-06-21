@@ -27,7 +27,6 @@ export function checkWeather() {
             }
         });
     }
-
     // Function to get location name from coordinates using reverse geocoding
     async function getLocationName(latitude, longitude) {
         const geocodingUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}`;
@@ -43,13 +42,16 @@ export function checkWeather() {
     // Function to display local time in different time zones
     function displayLocalTime(timezone) {
         const date = new Date();
+        const n = date.toDateString();
+
         const options = {
             timeZone: timezone,
             hour12: false,
         };
         const formattedTime = date.toLocaleTimeString("en-US", options);
-
         utcHourElement.innerHTML = formattedTime;
+
+        document.querySelector('.date').innerHTML = n;
     }
 
 
@@ -77,8 +79,7 @@ export function checkWeather() {
 
 
                     // Change weather card's icon
-                    // var iconcode = a.weather[0].icon;
-                    // var iconurl = "http://openweathermap.org/img/w/" + iconcode 
+
                     if (data.weather[0].main == "Clouds") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/04d@2x.png";
                     } else if (data.weather[0].main == "Clear") {
