@@ -83,7 +83,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 70vw;
+    height: auto;
     padding: 25px;
     margin: auto;
     text-align: center;
@@ -102,8 +103,8 @@
   .error p {
     display: none;
     text-align: center;
-    color: #003E65;
-    font-weight: 500;
+    color: #FA8305;
+    font-weight: 600;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
     margin: 50px;

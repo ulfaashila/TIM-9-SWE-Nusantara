@@ -80,8 +80,6 @@ export function checkWeather() {
                     document.querySelector('.current-weather-icon p').innerHTML = data.weather[0].description;
 
                     // Change weather card's icon
-                    // var iconcode = a.weather[0].icon;
-                    // var iconurl = "http://openweathermap.org/img/w/" + iconcode 
                     if (data.weather[0].main == "Clouds") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/04d@2x.png";
                     } else if (data.weather[0].main == "Clear") {
