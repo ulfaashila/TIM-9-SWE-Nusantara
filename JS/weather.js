@@ -27,6 +27,7 @@ export function checkWeather() {
             }
         });
     }
+
     // Function to get location name from coordinates using reverse geocoding
     async function getLocationName(latitude, longitude) {
         const geocodingUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}`;
@@ -54,7 +55,6 @@ export function checkWeather() {
         document.querySelector('.date').innerHTML = n;
     }
 
-
     // Asynchronous Function
     async function checkWeather(city) {
         try {
@@ -77,9 +77,9 @@ export function checkWeather() {
                     document.querySelector('.visibility p').innerHTML = data.visibility / 1000 + " km";
                     document.querySelector('.current-weather-icon p').innerHTML = data.weather[0].description;
 
-
                     // Change weather card's icon
-
+                    // var iconcode = a.weather[0].icon;
+                    // var iconurl = "http://openweathermap.org/img/w/" + iconcode 
                     if (data.weather[0].main == "Clouds") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/04d@2x.png";
                     } else if (data.weather[0].main == "Clear") {
@@ -91,6 +91,8 @@ export function checkWeather() {
                     } else if (data.weather[0].main == "Drizzle") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/09d@2x.png";
                     } else if (data.weather[0].main == "Snow") {
+                        weatherIcon.src = "https://openweathermap.org/img/wn/13d@2x.png";
+                    } else if (data.weather[0].main == "Mist") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/13d@2x.png";
                     }
                 } else {
@@ -129,8 +131,6 @@ export function checkWeather() {
                     } else if (data.weather[0].main == "Snow") {
                         weatherIcon.src = "https://openweathermap.org/img/wn/13d@2x.png";
                     }
-                } else {
-                    throw new Error("Invalid location");
                 }
             }
 
