@@ -143,10 +143,18 @@
     padding-left: 20px;
 }
 
-.time p {
+.time .utc-hour {
     text-align: left;
     padding: 10px;
     font-size: 18px;
+    font-weight: 600;
+    color: #003e65;
+}
+
+.time .date {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
     font-weight: 600;
     color: #003e65;
 }
