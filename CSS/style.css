@@ -390,41 +390,63 @@ footer {
   color: #003e65;
 }
 
-/* media responsive for hero */
-@media (max-width: 768px) {
+/* Landing Page Responsive */
+@media screen and (max-width: 1280px) {
+    .hero {
+        width: 100vw;
+    }
+}
 
-  .hero>h1,
-  .hero>p,
-  .button-hero {
-    position: relative;
-    left: auto;
-    transform: none;
-    margin: 0 auto;
-    width: 80%;
-  }
+@media screen and (max-width: 840px) {
+    .hero {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-  .center {
-    display: flex;
-    justify-content: center;
-  }
+    .hero>h1 {
+        font-size: 35px;
+        top: 24vw;
+    }
 
-  .hero>h1 {
-    font-size: 26px !important;
-    line-height: 1.2;
-    top: 20px;
-  }
+    .hero>p {
+        top: 32vw;
+        padding: 20px;
+        font-size: 13px;
+        width: 298px;
+        line-height: 20px;
+    }
 
-  .hero>p {
-    top: 10vw;
-    font-size: 4vw;
-    line-height: 1.5;
-  }
+    .button-hero {
+        top: 55vw;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+    }
 
-  .button-hero {
-    top: 15vw;
-    width: 60%;
-    height: 8vw;
-  }
+    .btn-hero {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .overview {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .overview>p {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .Heading-news {
+        font-size: 15px;
+    }
 }
 
 /* Media Responsive */
