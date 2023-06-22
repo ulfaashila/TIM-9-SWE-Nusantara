@@ -78,7 +78,7 @@
     margin: 5px;
 }
 
-/* Weather Page Card - start */
+/* Weather Page Card*/
 .weather-card {
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@
     border-radius: 20px;
 }
 
-/* Styling for error page
+/* Styling for error page */
   .error {
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@
     font-family: 'poppins', sans-serif;
     font-size: 18px;
     margin: 50px;
-  } */
+  }
 
 .current-weather-icon {
     display: flex;
@@ -146,7 +146,7 @@
 .time .utc-hour {
     text-align: left;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #003e65;
 }

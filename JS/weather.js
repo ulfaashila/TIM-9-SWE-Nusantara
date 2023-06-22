@@ -66,6 +66,8 @@ export function checkWeather() {
                 const data = await response.json();
 
                 if (data.cod === 200) {
+                    document.querySelector('.error p').style.display = "none";
+                    document.querySelector('.weather-card').style.display = "flex";
                     locationName = data.name;
                     timezone = getTimezone(data.timezone);
                     document.querySelector('.location p').innerHTML = locationName;
@@ -107,6 +109,8 @@ export function checkWeather() {
                 const data = await response.json();
 
                 if (data.cod === 200) {
+                    document.querySelector('.error p').style.display = "none";
+                    document.querySelector('.weather-card').style.display = "flex";
                     timezone = getTimezone(data.timezone);
                     document.querySelector('.location p').innerHTML = locationName;
                     document.querySelector('.temperature h3').innerHTML = Math.round(data.main.temp) + "°C";
@@ -136,6 +140,8 @@ export function checkWeather() {
 
             displayLocalTime(timezone);
         } catch (error) {
+            document.querySelector('.error p').style.display = "inline-block";
+            document.querySelector('.weather-card').style.display = "none";
             document.querySelector('.location p').innerHTML = "Invalid location";
             document.querySelector('.temperature h3').innerHTML = null + "°C";
             document.querySelector('.temperature p').innerHTML = "Feels like " + null + "°C";
@@ -145,8 +151,6 @@ export function checkWeather() {
             document.querySelector('.visibility p').innerHTML = null + " km";
             document.querySelector('.current-weather-icon p').innerHTML = undefined;
 
-            // Show alert for invalid location
-            alert("Invalid location. Please enter a valid city name.");
         }
     }
 

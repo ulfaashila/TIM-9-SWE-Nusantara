@@ -1,3 +1,4 @@
+/* hero news */
 .Hero-news {
   position: relative;
   font-size: 48px;
@@ -20,6 +21,7 @@
   margin: -50px;
 }
 
+/* card News */
 .card-container {
   position: relative;
   width: 100%;
@@ -116,6 +118,8 @@
   line-height: normal;
 }
 
+
+/* media responsive */
 @media screen and (max-width: 1280px) {
   .news-grid>article {
     width: 100%;

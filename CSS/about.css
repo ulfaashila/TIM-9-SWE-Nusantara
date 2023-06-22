@@ -1,3 +1,4 @@
+/* Header About US */
 .header-parent {
     background-image: url(../assets/HeroNews.png);
     background-position: bottom;
@@ -24,6 +25,7 @@
     margin: 20px;
   }
   
+  /* About NusaWeather */
   .about {
     margin-top: -3rem;
     position: relative;
@@ -50,6 +52,7 @@
     margin-bottom: 30px;
   }
   
+  /* the advantage NusaWeather */
   .advantage-parent {
     background-color: #e2e7ef;
     text-align: center;
@@ -82,6 +85,7 @@
     padding: 20px;
   }
   
+  /* Profile Team */
   .team {
     width: 100%;
     height: 1690px;
@@ -161,6 +165,7 @@
     cursor: pointer;
   }
   
+  /* media responsive */
   @media (max-width: 1240px) {
     .team {
       width: 100%;
