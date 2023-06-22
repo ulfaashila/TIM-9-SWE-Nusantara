@@ -373,6 +373,7 @@ article:has(:hover, :focus) {
   padding: auto;
   font-family: "poppins", sans-serif;
   border: solid transparent;
+  
   transition: 0.2s ease;
 }
 
